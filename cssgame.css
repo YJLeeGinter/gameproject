@@ -1,0 +1,28 @@
+h1 { 
+    text-align: center;
+}
+
+.wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 0.5rem;
+    margin: 0% auto;
+    padding-left: 5%;
+    padding-right: 5%;
+ 
+}
+
+.first {
+    background-color: lightgray;
+    border: 2px solid;
+}
+
+.first:hover{
+    background-color: darkgrey;
+}
+
+ img {
+    height : 80%;
+    width: 80%;
+}
