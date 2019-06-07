@@ -1,14 +1,22 @@
+
+@media(max-width: 600px){
+    :root{
+    --padding-size-left: none;
+    --padding-size-right: none;}
+}
+
 h1 { 
     text-align: center;
 }
+
 
 .wraper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(250px, auto);
     margin: 0% auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: var(--padding-size-left, 20%);
+    padding-right: var(--padding-size-right, 20%);
  
 }
 
@@ -42,3 +50,4 @@ h1 {
     background-color: red;
     cursor: pointer;
 }
+
